@@ -9,9 +9,6 @@ public class Chair : MonoBehaviour
     private Rigidbody2D rb2d;
     private Animator ChairAnim;
 
-    private bool sitable = false;
-    public bool sitting = false;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -22,34 +19,16 @@ public class Chair : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetButtonDown("Interact"))
-        {
-            if(sitting == true)
-            {
-                sitting = false;
-            }
-            else if(sitting == false)
-            {
-                sitting = true;
-            }
-
-            ChairAnim.SetTrigger("ToggleSit");
-        }
+        //if (Input.GetButtonDown("Interact"))
+        //{
+        //    ChairAnim.SetTrigger("ToggleSit");
+        //}
 
         float distance = Vector3.Distance(gameObject.transform.position, player.transform.position);
 
-        if (distance < objectClosenesss)
+        if (distance <= objectClosenesss && Input.GetKeyDown(KeyCode.DownArrow))
         {
-            Debug.Log("Yes I am here");
-            sitable = true;
+            Debug.Log("Sit I do for I am here");
         }
-        else
-        {
-            sitable = false;
-        }
-
-        
-
     }
 }

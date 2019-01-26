@@ -14,7 +14,7 @@ public class Interactable : MonoBehaviour
 
     private bool removeLeaves = false;
     public float fadeSpeed;
-    private float opacityTime;
+    private float opacityTime = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -45,11 +45,11 @@ public class Interactable : MonoBehaviour
 
         if (removeLeaves == true)
         {
-            if (opacityTime >= 30)
+            if (opacityTime >= 0.5)
             {
                 opacityTime -= Time.deltaTime * fadeSpeed;
             }
-            spriteRenderer.color = new Color(1f, 1f, 1f, opacityTime);
+            spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, opacityTime);
         }
 
     }

@@ -1,19 +1,21 @@
 fileFormatVersion: 2
-guid: 174ba9ba854a3fb409cb3fdedffb0d71
+guid: 0fb5b3314a0c3e4488bf3a96e162111a
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Player Idle_0
-    21300002: Player Idle_1
-    21300004: Player Idle_2
-    21300006: Player Idle_3
-    21300008: Player Idle_4
-    21300010: Player Idle_5
-    21300012: Player Idle_6
-    21300014: Player Idle_7
-    21300016: Player Idle_8
-    21300018: Player Idle_9
-    21300020: Player Idle_10
-    21300022: Player Idle_11
+    21300000: Walking Animation_0
+    21300002: Walking Animation_1
+    21300004: Walking Animation_2
+    21300006: Walking Animation_3
+    21300008: Walking Animation_4
+    21300010: Walking Animation_5
+    21300012: Walking Animation_6
+    21300014: Walking Animation_7
+    21300016: Walking Animation_8
+    21300018: Walking Animation_9
+    21300020: Walking Animation_10
+    21300022: Walking Animation_11
+    21300024: Walking Animation_12
+    21300026: Walking Animation_13
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -96,12 +98,32 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player Idle_0
+      name: Walking Animation_0
       rect:
         serializedVersion: 2
-        x: 38
+        x: 32
+        y: 393
+        width: 55
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328362ff712399e4d9d2ac42812d8a74
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Animation_1
+      rect:
+        serializedVersion: 2
+        x: 160
         y: 394
-        width: 52
+        width: 54
         height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -110,158 +132,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f535ea9885470447ada635e7b9bd010
+      spriteID: cfd1ab70348d57e46a1f37a65fed58c0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Idle_1
+      name: Walking Animation_2
       rect:
         serializedVersion: 2
-        x: 166
+        x: 288
         y: 394
-        width: 52
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3f2b19540a1b5b49a7ba5c3a785d6e5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_2
-      rect:
-        serializedVersion: 2
-        x: 294
-        y: 394
-        width: 52
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a186664ce599ce40aff92217af4128c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_3
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 266
-        width: 52
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0dbe7a9790baf44299ec18ea96f1faa
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_4
-      rect:
-        serializedVersion: 2
-        x: 166
-        y: 266
-        width: 52
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 64a49e68ff462564f8a850f456c8e8ee
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_5
-      rect:
-        serializedVersion: 2
-        x: 294
-        y: 266
-        width: 52
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8e2bfa3ff0649943adfd95c9838d49d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_6
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 138
-        width: 52
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2eb1a7aa31e20914eb327b57567dcd05
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_7
-      rect:
-        serializedVersion: 2
-        x: 166
-        y: 138
-        width: 52
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 08e9e4e937baf334db71aba5205b6a22
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_8
-      rect:
-        serializedVersion: 2
-        x: 294
-        y: 138
-        width: 52
+        width: 54
         height: 94
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -270,19 +152,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a4f1dbe2db537d4997973c117f9026f
+      spriteID: 09732103ba39933499600f5bbad0716e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Idle_9
+      name: Walking Animation_3
       rect:
         serializedVersion: 2
-        x: 36
-        y: 62
-        width: 9
-        height: 9
+        x: 417
+        y: 393
+        width: 53
+        height: 95
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,19 +172,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba85632b0b85a0e4aa5e98321ea8110f
+      spriteID: a23cd50976f82fa4e8729f25de668746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Idle_10
+      name: Walking Animation_4
       rect:
         serializedVersion: 2
-        x: 38
-        y: 10
-        width: 52
-        height: 92
+        x: 33
+        y: 265
+        width: 53
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,18 +192,98 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7455610f476ebc146be4d043f63a5932
+      spriteID: 27c6b2d69c0007547a20855ae55d619f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Idle_11
+      name: Walking Animation_5
       rect:
         serializedVersion: 2
-        x: 166
-        y: 10
-        width: 52
+        x: 160
+        y: 265
+        width: 54
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b204d3f4939664693bbbcd49d0bd9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Animation_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 265
+        width: 54
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007280323b62b36478c28f68bb4bbf92
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Animation_7
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 265
+        width: 55
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ebf620edfbaca4bb4ad2e20122ae8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Animation_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 138
+        width: 54
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066bc00097dfa2c4fac756fb04ac1d7b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Animation_9
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 138
+        width: 54
         height: 94
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -330,7 +292,87 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb7bc0c5935b1f2429862fa6d486c221
+      spriteID: 0be6d9cb72cdd4349905932c32c2acf2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Animation_10
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 137
+        width: 53
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36fdc67bdf84184a93406d03646a671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Animation_11
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 137
+        width: 53
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4721954a7fb88343addc5f599621c30
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Animation_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 9
+        width: 54
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0f3cec371b7ba4a92e3d29e4852dfc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walking Animation_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 9
+        width: 54
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418484cb6e1d1aa469d9c49b34a94bd3
       vertices: []
       indices: 
       edges: []
@@ -338,7 +380,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d1d293b64b770e646a5ab38fc1f09fa0
+    spriteID: 365a69dcc62da0244ae5bff3e539c7c5
     vertices: []
     indices: 
     edges: []

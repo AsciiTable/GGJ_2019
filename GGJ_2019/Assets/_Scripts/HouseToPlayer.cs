@@ -6,6 +6,9 @@ public class HouseToPlayer : MonoBehaviour
 {
     public GameObject player;
     public float playerByHouse;
+    public float fadeSpeed;
+
+    private float opacityTime;
     private Rigidbody2D rb2d;
     private SpriteRenderer spriteRenderer;
     // Start is called before the first frame update
@@ -13,6 +16,7 @@ public class HouseToPlayer : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        opacityTime = 1f;
     }
 
     // Update is called once per frame
@@ -23,7 +27,20 @@ public class HouseToPlayer : MonoBehaviour
         if (distance < playerByHouse)
         {
             Debug.Log("Yes I am here");
-            spriteRenderer.color = new Color(1f, 1f, 1f, 0f);
+            if(opacityTime >= 0)
+            {
+                opacityTime -= Time.deltaTime * fadeSpeed;
+            }
+            spriteRenderer.color = new Color(1f, 1f, 1f, opacityTime);
+        }
+        else if (distance >= playerByHouse)
+        {
+            Debug.Log("I am gone");
+            if (opacityTime <= 1)
+            {
+                opacityTime += Time.deltaTime * fadeSpeed;
+            }
+            spriteRenderer.color = new Color(1f, 1f, 1f, opacityTime);
         }
     }
 }

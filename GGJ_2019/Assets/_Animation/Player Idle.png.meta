@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2fc71e1bc64e5864785b98a17e53c214
+guid: 174ba9ba854a3fb409cb3fdedffb0d71
 TextureImporter:
   fileIDToRecycleName:
     21300000: Player Idle_0
@@ -100,146 +100,6 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 38
-        y: 1290
-        width: 52
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a38458c50f0f78a419a4d043dba13e0a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_1
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 1162
-        width: 52
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a5307bd1ebe4fd4cb51a9b785cf215b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_2
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 1034
-        width: 52
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce65e3d04a11ace48b7309a84232f82e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_3
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 906
-        width: 52
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 503b32ca85fed184a955ee7f56c50606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_4
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 778
-        width: 52
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c084bf665ca66674299e51a037ee40ac
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_5
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 650
-        width: 52
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87c48123802ac7144b49cbf540cc1559
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_6
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 522
-        width: 52
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36c471bff62d7cf419597949328e2c83
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_7
-      rect:
-        serializedVersion: 2
-        x: 38
         y: 394
         width: 52
         height: 96
@@ -250,7 +110,147 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1e5634584df4444cad2dae845053bef
+      spriteID: 3f535ea9885470447ada635e7b9bd010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Idle_1
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 394
+        width: 52
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f2b19540a1b5b49a7ba5c3a785d6e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Idle_2
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 394
+        width: 52
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a186664ce599ce40aff92217af4128c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Idle_3
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 266
+        width: 52
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0dbe7a9790baf44299ec18ea96f1faa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Idle_4
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 266
+        width: 52
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a49e68ff462564f8a850f456c8e8ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Idle_5
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 266
+        width: 52
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e2bfa3ff0649943adfd95c9838d49d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Idle_6
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 138
+        width: 52
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb1a7aa31e20914eb327b57567dcd05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Idle_7
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 138
+        width: 52
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e9e4e937baf334db71aba5205b6a22
       vertices: []
       indices: 
       edges: []
@@ -259,47 +259,7 @@ TextureImporter:
       name: Player Idle_8
       rect:
         serializedVersion: 2
-        x: 38
-        y: 266
-        width: 52
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad7f3d8a8879dc24ea062391d51e74c8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_9
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 190
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06683c28eb6023c46ba0c524f27eb4db
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_10
-      rect:
-        serializedVersion: 2
-        x: 38
+        x: 294
         y: 138
         width: 52
         height: 94
@@ -310,7 +270,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1de8125879ed7c14092bb70c15bf0909
+      spriteID: 6a4f1dbe2db537d4997973c117f9026f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Idle_9
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 62
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba85632b0b85a0e4aa5e98321ea8110f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Idle_10
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 10
+        width: 52
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7455610f476ebc146be4d043f63a5932
       vertices: []
       indices: 
       edges: []
@@ -319,7 +319,7 @@ TextureImporter:
       name: Player Idle_11
       rect:
         serializedVersion: 2
-        x: 38
+        x: 166
         y: 10
         width: 52
         height: 94
@@ -330,7 +330,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d31e0a80cae36404ab21fd58a51a2b37
+      spriteID: cb7bc0c5935b1f2429862fa6d486c221
       vertices: []
       indices: 
       edges: []
@@ -338,7 +338,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1a2fc9727ead1e343809a49a3c668587
+    spriteID: d1d293b64b770e646a5ab38fc1f09fa0
     vertices: []
     indices: 
     edges: []

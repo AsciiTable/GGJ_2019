@@ -16,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Camera
   - 
   - 
   - 
@@ -41,6 +41,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1184577323
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Colliders
+    uniqueID: 2715643169
+    locked: 0
+  - name: Player
+    uniqueID: 987571413
+    locked: 0
+  - name: Objects
+    uniqueID: 3011954651
     locked: 0

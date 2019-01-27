@@ -26,17 +26,16 @@ public class HouseToPlayer : MonoBehaviour
 
         if (distance < playerByHouse)
         {
-            Debug.Log("Yes I am here");
-            if(opacityTime >= 0)
+            Audio.PlaySound("door_open");
+
+            if (opacityTime >= 0)
             {
                 opacityTime -= Time.deltaTime * fadeSpeed;
-                Audio.PlaySound("door_open");
             }
             spriteRenderer.color = new Color(1f, 1f, 1f, opacityTime);
         }
         else if (distance >= playerByHouse)
         {
-            Debug.Log("I am gone");
             if (opacityTime <= 1)
             {
                 opacityTime += Time.deltaTime * fadeSpeed;

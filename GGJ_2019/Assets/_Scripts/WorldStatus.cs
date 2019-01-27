@@ -19,8 +19,6 @@ public class WorldStatus : MonoBehaviour
 
     //is viewing stars
     public bool starGaze = false;
-    public bool stopGaze = false;
-    public bool starReady = true;
     public bool stars = false;
 
     public int collection = 0;

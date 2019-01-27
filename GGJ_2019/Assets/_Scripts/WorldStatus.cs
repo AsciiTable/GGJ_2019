@@ -52,76 +52,10 @@ public class WorldStatus : MonoBehaviour
         {
             playerTrans.SetPositionAndRotation(new Vector3(16f,-3.1f),playerTrans.rotation);
         }
-        if (!starGaze)
-        {
-            if (collection == 1)
-            {
-                Audio.PlaySound("outOfCave");
-            }
-            else if (collection == 2)
-            {
-                Audio.PlaySound("reminder");
-            }
-            else if (collection == 3)
-            {
-                Audio.PlaySound("bitsOfColor");
-            }
-            else if (collection == 4)
-            {
-                Audio.PlaySound("bitsOfSound");
-            }
-            else if (collection == 5)
-            {
-                Audio.PlaySound("thisIsHome");
-            }
-            else if (collection == 6)
-            {
-                Audio.PlaySound("rememberance");
-            }
-        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(starGaze)
-        {
-            starGaze = false;
-            starReady = false;
-            music.Stop();
-            Audio.PlaySound("stargaze");
-        }
-        if(stopGaze)
-        {
-            stopGaze = false;
-            starReady = true;
-            music.Stop();
-
-            if (collection == 1)
-            {
-                Audio.PlaySound("outOfCave");
-            }
-            else if (collection == 2)
-            {
-                Audio.PlaySound("reminder");
-            }
-            else if (collection == 3)
-            {
-                Audio.PlaySound("bitsOfColor");
-            }
-            else if (collection == 4)
-            {
-                Audio.PlaySound("bitsOfColor");
-            }
-            else if (collection == 5)
-            {
-                Audio.PlaySound("thisIsHome");
-            }
-            else if (collection == 6)
-            {
-                Audio.PlaySound("rememberance");
-            }
-        }
-
     }
 }

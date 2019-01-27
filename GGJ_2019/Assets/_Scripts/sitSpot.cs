@@ -39,6 +39,7 @@ public class sitSpot : MonoBehaviour
         if(type == "NightSky" && worldStatus.stars == true)
         {
             active = false;
+            spriteRenderer.enabled = true;
         }
 
     }
@@ -52,12 +53,6 @@ public class sitSpot : MonoBehaviour
         if (distance <= closeness && playerInput.crouch)
         {
             sitTimer += Time.deltaTime;
-            if (!played)
-            {
-                played = true;
-                Audio.PlaySound("fire_crackle");
-                bgm.enabled = true;
-            }
         }
         else
         {
@@ -69,6 +64,14 @@ public class sitSpot : MonoBehaviour
 
         if(sitTimer >= 8f && active)
         {
+            if(type == "NightSky")
+            {
+                spriteRenderer.enabled = true;
+                active = false;
+                worldStatus.stars = true;
+                worldStatus.collection++;
+            }
+
             //Sit Next to Campfire
             if (type == "Campfire")
             {
@@ -79,20 +82,9 @@ public class sitSpot : MonoBehaviour
             }
         }
 
-        if (type == "NightSky" && playerInput.crouch && worldStatus.starReady)
+        if (type == "NightSky" && playerInput.crouch)
         {
             worldStatus.starGaze = true;
-
-            if(sitTimer >= 8f && active)
-            {
-                worldStatus.collection++;
-                worldStatus.stars = true;
-                active = false;
-            }
-        }
-        if(!playerInput.crouch && worldStatus.starGaze)
-        {
-            worldStatus.stopGaze = true;
         }
         
 

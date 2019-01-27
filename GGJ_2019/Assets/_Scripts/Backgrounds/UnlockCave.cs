@@ -19,25 +19,29 @@ public class UnlockCave : MonoBehaviour
 
         cinemachine = GetComponent<CinemachineVirtualCamera>();
 
+        if(worldStatus.CaveBackground == true)
+        {
+            Destroy(tempBlock.gameObject);
+            cinemachine.enabled = true;
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (worldStatus.CaveBackground == true)
+        if (!cinemachine.isActiveAndEnabled)
         {
-            cinemachine.enabled = true;
-
-            if(tempBlock)
+            if (worldStatus.CaveBackground == true && tempBlock)
             {
                 timer += Time.deltaTime;
             }
+            if (timer >= 8.0f)
+            {
+                Destroy(tempBlock.gameObject);
+                cinemachine.enabled = true;
+            }
         }
-
-        if(timer >= 8.0f)
-        {
-            Destroy(tempBlock.gameObject);
-        }
-
+        
     }
 }

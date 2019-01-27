@@ -25,6 +25,13 @@ public class Interactable : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
         worldStatus = GameObject.FindGameObjectWithTag("ScriptHolder").GetComponent<WorldStatus>(); 
+
+
+        if(type == "ToyHouse" && worldStatus.CaveBackground == true)
+        {
+            Destroy(this.gameObject);
+        }
+
     }
 
     // Update is called once per frame

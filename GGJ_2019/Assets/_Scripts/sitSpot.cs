@@ -7,6 +7,7 @@ public class sitSpot : MonoBehaviour
     private UnityStandardAssets._2D.Platformer2DUserControl playerInput;
 
     public GameObject player;
+    private WorldStatus worldStatus;
     public float closeness; //Input Inspector: how close does player need to be
     public string type; //Input: What kind of interactable object is this?
 
@@ -15,7 +16,7 @@ public class sitSpot : MonoBehaviour
     private BoxCollider2D boxCollider;
 
     private float sitTimer;
-    private bool active = false;
+    private bool active = true;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,7 @@ public class sitSpot : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
         playerInput = GameObject.Find("Player").GetComponent<UnityStandardAssets._2D.Platformer2DUserControl>();
-
+        worldStatus = GameObject.FindGameObjectWithTag("ScriptHolder").GetComponent<WorldStatus>();
 
     }
 
@@ -34,12 +35,9 @@ public class sitSpot : MonoBehaviour
 
         float distance = Vector3.Distance(gameObject.transform.position, player.transform.position);
 
-        if (distance <= closeness)
+        if (distance <= closeness && playerInput.crouch)
         {
-            if (playerInput.crouch)
-            {
-                sitTimer += Time.deltaTime;
-            }
+            sitTimer += Time.deltaTime;
         }
         else
         {
@@ -53,6 +51,9 @@ public class sitSpot : MonoBehaviour
             if (type == "Campfire")
             {
                 active = false;
+                worldStatus.ForestBackground = true;
+                worldStatus.livingRoom++;
+                worldStatus.collection++;
             }
         }
         

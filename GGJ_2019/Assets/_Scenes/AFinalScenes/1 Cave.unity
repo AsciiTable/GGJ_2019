@@ -902,7 +902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98cf8441075f6fa42b4c0615aa9e7b32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 2 House
+  nextScene: 2 Forest
 --- !u!61 &1263678245
 BoxCollider2D:
   m_ObjectHideFlags: 0

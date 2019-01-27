@@ -53,14 +53,14 @@ namespace UnityStandardAssets._2D
         public void Move(float move, bool crouch, bool jump)
         {
             // If crouching, check to see if the character can stand up
-            if (!crouch && m_Anim.GetBool("Crouch"))
-            {
-                // If the character has a ceiling preventing them from standing up, keep them crouching
-                if (Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround))
-                {
-                    crouch = true;
-                }
-            }
+            //if (!crouch && m_Anim.GetBool("Crouch"))
+            //{
+            //    // If the character has a ceiling preventing them from standing up, keep them crouching
+            //    if (Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround))
+            //    {
+            //        crouch = true;
+            //    }
+            //}
 
             // Set whether or not the character is crouching in the animator
             m_Anim.SetBool("Crouch", crouch);

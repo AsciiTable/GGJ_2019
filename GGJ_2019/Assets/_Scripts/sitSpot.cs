@@ -18,6 +18,10 @@ public class sitSpot : MonoBehaviour
     private float sitTimer;
     private bool active = true;
 
+    private bool played = false;
+
+    public AudioSource bgm;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +39,7 @@ public class sitSpot : MonoBehaviour
         if(type == "NightSky" && worldStatus.stars == true)
         {
             active = false;
+            spriteRenderer.enabled = true;
         }
 
     }
@@ -59,6 +64,14 @@ public class sitSpot : MonoBehaviour
 
         if(sitTimer >= 8f && active)
         {
+            if(type == "NightSky")
+            {
+                spriteRenderer.enabled = true;
+                active = false;
+                worldStatus.stars = true;
+                worldStatus.collection++;
+            }
+
             //Sit Next to Campfire
             if (type == "Campfire")
             {
@@ -69,20 +82,9 @@ public class sitSpot : MonoBehaviour
             }
         }
 
-        if (type == "NightSky" && playerInput.crouch && worldStatus.starReady)
+        if (type == "NightSky" && playerInput.crouch)
         {
             worldStatus.starGaze = true;
-
-            if(sitTimer >= 8f && active)
-            {
-                worldStatus.collection++;
-                worldStatus.stars = true;
-                active = false;
-            }
-        }
-        if(!playerInput.crouch && worldStatus.starGaze)
-        {
-            worldStatus.stopGaze = true;
         }
         
 

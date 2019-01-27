@@ -18,6 +18,8 @@ public class Interactable : MonoBehaviour
     public float fadeSpeed;
     private float opacityTime = 1f;
 
+    public AudioSource bgm;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +51,7 @@ public class Interactable : MonoBehaviour
                 {
                     removeItem = true;
                     worldStatus.CaveBackground = true;
+                    bgm.enabled = true;
                 }
             }
         }

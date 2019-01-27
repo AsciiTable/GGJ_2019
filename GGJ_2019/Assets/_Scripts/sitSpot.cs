@@ -30,9 +30,11 @@ public class sitSpot : MonoBehaviour
         if(type == "Campfire" && worldStatus.ForestBackground)
         {
             active = false;
-            worldStatus.livingRoom++;
-            worldStatus.collection++;
             Destroy(this.gameObject);
+        }
+        if(type == "NightSky" && worldStatus.stars == true)
+        {
+            active = false;
         }
 
     }
@@ -53,6 +55,8 @@ public class sitSpot : MonoBehaviour
         }
 
         //if they sit for at least 8 seconds
+
+
         if(sitTimer >= 8f && active)
         {
             //Sit Next to Campfire
@@ -63,6 +67,22 @@ public class sitSpot : MonoBehaviour
                 worldStatus.livingRoom++;
                 worldStatus.collection++;
             }
+        }
+
+        if (type == "NightSky" && playerInput.crouch && worldStatus.starReady)
+        {
+            worldStatus.starGaze = true;
+
+            if(sitTimer >= 8f && active)
+            {
+                worldStatus.collection++;
+                worldStatus.stars = true;
+                active = false;
+            }
+        }
+        if(!playerInput.crouch && worldStatus.starGaze)
+        {
+            worldStatus.stopGaze = true;
         }
         
 

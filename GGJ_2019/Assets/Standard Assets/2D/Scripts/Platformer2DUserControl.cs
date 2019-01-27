@@ -13,6 +13,7 @@ namespace UnityStandardAssets._2D
         private PlatformerCharacter2D m_Character;
         private bool m_Jump;
 
+        public float sitTimer = 0f;
 
         private void Awake()
         {
@@ -27,6 +28,13 @@ namespace UnityStandardAssets._2D
                 // Read the jump input in Update so button presses aren't missed.
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
+
+            //Timer for crouching
+            if (crouch)
+            {
+                sitTimer += Time.deltaTime;
+            }
+
         }
 
 
@@ -38,6 +46,7 @@ namespace UnityStandardAssets._2D
             {
                 crouch = !crouch;
             }
+
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
             // Pass all parameters to the character control script.
             if (!Input.GetKey(KeyCode.LeftShift))

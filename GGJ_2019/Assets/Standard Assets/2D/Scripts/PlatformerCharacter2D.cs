@@ -59,7 +59,7 @@ namespace UnityStandardAssets._2D
             {
                 sprint = true;
                 m_Anim.SetBool("Sprint", sprint);
-                m_MaxSpeed = 20f;
+                m_MaxSpeed = 15f;
             }
         }
 

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WorldStatus : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class WorldStatus : MonoBehaviour
     public int collection = 0;
     public int livingRoom = 0;
 
-    public int playerPosition = 0;
+    public bool playerLeft; //Is the player going to show up on the left side?
 
     // Start is called before the first frame update
     void Awake()
@@ -37,7 +38,7 @@ public class WorldStatus : MonoBehaviour
     {
         playerTrans = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
-        if (playerPosition == 1)
+        if (SceneManager.GetActiveScene().name == "1 Cave" && playerLeft)
         {
             playerTrans.SetPositionAndRotation(new Vector3(16f,-3.1f),playerTrans.rotation);
         }

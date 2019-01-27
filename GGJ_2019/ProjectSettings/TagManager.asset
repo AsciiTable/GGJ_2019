@@ -56,3 +56,6 @@ TagManager:
   - name: Objects
     uniqueID: 3011954651
     locked: 0
+  - name: Front Bois
+    uniqueID: 4206119763
+    locked: 0

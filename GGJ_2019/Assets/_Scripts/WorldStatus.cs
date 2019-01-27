@@ -5,7 +5,7 @@ using UnityEngine;
 public class WorldStatus : MonoBehaviour
 {
     //ToyHouse
-    public bool DetailedBackground = false;
+    public bool CaveBackground = false;
 
     public bool isSitting = false;
 
@@ -18,6 +18,5 @@ public class WorldStatus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 }

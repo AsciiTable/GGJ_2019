@@ -40,7 +40,7 @@ public class Interactable : MonoBehaviour
                 if(type == "ToyHouse")
                 {
                     removeItem = true;
-                    worldStatus.DetailedBackground = true;
+                    worldStatus.CaveBackground = true;
                 }
             }
         }

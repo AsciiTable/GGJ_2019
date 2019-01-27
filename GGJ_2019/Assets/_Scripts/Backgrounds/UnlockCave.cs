@@ -9,6 +9,8 @@ public class UnlockCave : MonoBehaviour
     private CinemachineVirtualCamera cinemachine;
     private GameObject tempBlock;
 
+    private float timer = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,14 +24,20 @@ public class UnlockCave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (worldStatus.DetailedBackground == true)
+        if (worldStatus.CaveBackground == true)
         {
             cinemachine.enabled = true;
 
             if(tempBlock)
             {
-                Destroy(tempBlock.gameObject);
+                timer += Time.deltaTime;
             }
         }
+
+        if(timer >= 8.0f)
+        {
+            Destroy(tempBlock.gameObject);
+        }
+
     }
 }

@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interactable : MonoBehaviour
+public class sitSpot : MonoBehaviour
 {
-    private WorldStatus worldStatus;
-
     public GameObject player;
     public float closeness; //Input Inspector: how close does player need to be
     public string type; //Input: What kind of interactable object is this?
@@ -14,17 +12,12 @@ public class Interactable : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D boxCollider;
 
-    private bool removeItem = false;
-    public float fadeSpeed;
-    private float opacityTime = 1f;
-
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
-        worldStatus = GameObject.FindGameObjectWithTag("ScriptHolder").GetComponent<WorldStatus>(); 
     }
 
     // Update is called once per frame
@@ -36,27 +29,13 @@ public class Interactable : MonoBehaviour
         {
             if (Input.GetButtonDown("Interact"))
             {
-                //Interact with ToyHouse
-                if(type == "ToyHouse")
+                //Sit Next to Campfire
+                if (type == "Campfire")
                 {
-                    removeItem = true;
-                    worldStatus.DetailedBackground = true;
+                    
                 }
             }
         }
 
-
-        if (removeItem == true)
-        {
-            boxCollider.enabled = false;
-
-            if (opacityTime >= 0)
-            {
-                opacityTime -= Time.deltaTime * fadeSpeed;
-            }
-            spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, opacityTime);
-        }
-
     }
-
 }

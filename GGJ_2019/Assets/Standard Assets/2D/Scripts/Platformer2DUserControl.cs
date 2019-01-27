@@ -37,6 +37,10 @@ namespace UnityStandardAssets._2D
             {
                 sitTimer += Time.deltaTime;
             }
+            else if(!crouch)
+            {
+                sitTimer == 0;
+            }
 
         }
 

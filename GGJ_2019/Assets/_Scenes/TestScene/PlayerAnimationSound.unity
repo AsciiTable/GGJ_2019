@@ -502,7 +502,7 @@ MonoBehaviour:
   GrandfatherClock: 0
   collection: 0
   livingRoom: 0
-  playerPosition: 0
+  playerLeft: 0
 --- !u!4 &835607361
 Transform:
   m_ObjectHideFlags: 0

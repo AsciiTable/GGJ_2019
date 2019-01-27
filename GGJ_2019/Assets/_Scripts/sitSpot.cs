@@ -27,6 +27,14 @@ public class sitSpot : MonoBehaviour
         playerInput = GameObject.Find("Player").GetComponent<UnityStandardAssets._2D.Platformer2DUserControl>();
         worldStatus = GameObject.FindGameObjectWithTag("ScriptHolder").GetComponent<WorldStatus>();
 
+        if(type == "Campfire" && worldStatus.ForestBackground)
+        {
+            active = false;
+            worldStatus.livingRoom++;
+            worldStatus.collection++;
+            Destroy(this.gameObject);
+        }
+
     }
 
     // Update is called once per frame

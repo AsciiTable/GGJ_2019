@@ -30,6 +30,7 @@ public class HouseToPlayer : MonoBehaviour
             if(opacityTime >= 0)
             {
                 opacityTime -= Time.deltaTime * fadeSpeed;
+                Audio.PlaySound("door_open");
             }
             spriteRenderer.color = new Color(1f, 1f, 1f, opacityTime);
         }

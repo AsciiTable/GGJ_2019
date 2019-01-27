@@ -7,7 +7,13 @@ public class WorldStatus : MonoBehaviour
     //ToyHouse
     public bool CaveBackground = false;
 
-    public bool isSitting = false;
+    //Campfire
+    public bool ForestBackground = false;
+    public bool FirePlace = false;
+
+    public int collection = 0;
+    public int LivingRoom = 0; //Grandfather Clock, Fireplace
+   
 
     // Start is called before the first frame update
     void Start()

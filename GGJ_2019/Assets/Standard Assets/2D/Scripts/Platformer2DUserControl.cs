@@ -15,8 +15,6 @@ namespace UnityStandardAssets._2D
         private PlatformerCharacter2D m_Character;
         private bool m_Jump;
 
-        public float sitTimer = 0f;
-
         private void Awake()
         {
             currentWindy = 1f;
@@ -30,16 +28,6 @@ namespace UnityStandardAssets._2D
             {
                 // Read the jump input in Update so button presses aren't missed.
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
-            }
-
-            //Timer for crouching
-            if (crouch)
-            {
-                sitTimer += Time.deltaTime;
-            }
-            else if(!crouch)
-            {
-                sitTimer = 0;
             }
 
         }

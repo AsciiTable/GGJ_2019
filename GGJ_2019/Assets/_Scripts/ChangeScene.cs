@@ -21,15 +21,8 @@ public class ChangeScene : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
+            worldStatus.playerLeft = Positive;
             SceneManager.LoadScene(nextScene);
-            if (Positive)
-            {
-                worldStatus.playerPosition++;
-            }
-            else if(!Positive)
-            {
-                worldStatus.playerPosition--;
-            }
         }
 
     }

@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class WorldStatus : MonoBehaviour
 {
-
-    //Toyhouse
+    //ToyHouse
     public bool DetailedBackground = false;
-
 
     // Start is called before the first frame update
     void Start()

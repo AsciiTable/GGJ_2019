@@ -39,7 +39,7 @@ namespace UnityStandardAssets._2D
             }
             else if(!crouch)
             {
-                sitTimer == 0;
+                sitTimer = 0;
             }
 
         }

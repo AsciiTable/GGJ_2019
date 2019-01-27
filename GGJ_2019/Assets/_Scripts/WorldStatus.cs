@@ -19,11 +19,16 @@ public class WorldStatus : MonoBehaviour
 
     //is viewing stars
     public bool starGaze = false;
+    public bool stopGaze = false;
+    public bool starReady = true;
+    public bool stars = false;
 
     public int collection = 0;
     public int livingRoom = 0;
 
     public bool playerLeft; //Is the player going to show up on the left side?
+
+    private AudioSource music;
 
     // Start is called before the first frame update
     void Awake()
@@ -41,16 +46,13 @@ public class WorldStatus : MonoBehaviour
     private void Start()
     {
         playerTrans = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        music = GetComponent<AudioSource>();
 
         if (SceneManager.GetActiveScene().name == "1 Cave" && playerLeft)
         {
             playerTrans.SetPositionAndRotation(new Vector3(16f,-3.1f),playerTrans.rotation);
         }
-        if (starGaze)
-        {
-            Audio.PlaySound("stargaze");
-        }
-        else
+        if (!starGaze)
         {
             if (collection == 1)
             {
@@ -82,7 +84,44 @@ public class WorldStatus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(starGaze)
+        {
+            starGaze = false;
+            starReady = false;
+            music.Stop();
+            Audio.PlaySound("stargaze");
+        }
+        if(stopGaze)
+        {
+            stopGaze = false;
+            starReady = true;
+            music.Stop();
+
+            if (collection == 1)
+            {
+                Audio.PlaySound("outOfCave");
+            }
+            else if (collection == 2)
+            {
+                Audio.PlaySound("reminder");
+            }
+            else if (collection == 3)
+            {
+                Audio.PlaySound("bitsOfColor");
+            }
+            else if (collection == 4)
+            {
+                Audio.PlaySound("bitsOfColor");
+            }
+            else if (collection == 5)
+            {
+                Audio.PlaySound("thisIsHome");
+            }
+            else if (collection == 6)
+            {
+                Audio.PlaySound("rememberance");
+            }
+        }
 
     }
 }

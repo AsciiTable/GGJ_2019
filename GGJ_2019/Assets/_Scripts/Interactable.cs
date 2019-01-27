@@ -30,6 +30,7 @@ public class Interactable : MonoBehaviour
         if(type == "ToyHouse" && worldStatus.CaveBackground == true)
         {
             Destroy(this.gameObject);
+            worldStatus.collection++;
         }
 
     }

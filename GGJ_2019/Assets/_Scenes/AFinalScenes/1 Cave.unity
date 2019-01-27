@@ -903,6 +903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: 2 Forest
+  Positive: 1
 --- !u!61 &1263678245
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1738,7 +1739,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CaveBackground: 0
-  isSitting: 0
+  ForestBackground: 0
+  GrandfatherClock: 0
+  collection: 0
+  livingRoom: 0
+  playerPosition: 0
 --- !u!4 &2082351159
 Transform:
   m_ObjectHideFlags: 0
@@ -2175,12 +2180,12 @@ PrefabInstance:
     - target: {fileID: 7172611025291518182, guid: d9b4edbf8fed4c94697f6779600285ae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.81
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 7172611025291518182, guid: d9b4edbf8fed4c94697f6779600285ae,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.08
+      value: -3.1
       objectReference: {fileID: 0}
     - target: {fileID: 7172611025291518182, guid: d9b4edbf8fed4c94697f6779600285ae,
         type: 3}

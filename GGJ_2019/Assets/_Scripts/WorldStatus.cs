@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class WorldStatus : MonoBehaviour
 {
     private Transform playerTrans;
@@ -15,6 +16,9 @@ public class WorldStatus : MonoBehaviour
 
     //Clock
     public bool GrandfatherClock = false;
+
+    //is viewing stars
+    public bool starGaze = false;
 
     public int collection = 0;
     public int livingRoom = 0;
@@ -42,10 +46,43 @@ public class WorldStatus : MonoBehaviour
         {
             playerTrans.SetPositionAndRotation(new Vector3(16f,-3.1f),playerTrans.rotation);
         }
+        if (starGaze)
+        {
+            Audio.PlaySound("stargaze");
+        }
+        else
+        {
+            if (collection == 1)
+            {
+                Audio.PlaySound("outOfCave");
+            }
+            else if (collection == 2)
+            {
+                Audio.PlaySound("reminder");
+            }
+            else if (collection == 3)
+            {
+                Audio.PlaySound("bitsOfColor");
+            }
+            else if (collection == 4)
+            {
+                Audio.PlaySound("bitsOfColor");
+            }
+            else if (collection == 5)
+            {
+                Audio.PlaySound("thisIsHome");
+            }
+            else if (collection == 6)
+            {
+                Audio.PlaySound("rememberance");
+            }
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+
     }
 }

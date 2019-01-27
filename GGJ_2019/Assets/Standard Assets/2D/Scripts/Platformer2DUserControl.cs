@@ -9,7 +9,9 @@ namespace UnityStandardAssets._2D
     {
         //Edit By KingdomCross:
         public bool crouch;
+        public float windy = 1f;
 
+        private float currentWindy;
         private PlatformerCharacter2D m_Character;
         private bool m_Jump;
 
@@ -17,6 +19,7 @@ namespace UnityStandardAssets._2D
 
         private void Awake()
         {
+            currentWindy = 1f;
             m_Character = GetComponent<PlatformerCharacter2D>();
         }
 
@@ -49,14 +52,26 @@ namespace UnityStandardAssets._2D
 
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
             // Pass all parameters to the character control script.
-            if (!Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetKeyDown(KeyCode.LeftShift) && windy >= 1)
             {
-                m_Character.Move(h, crouch, m_Jump);
+                if(currentWindy == 1f)
+                {
+                    currentWindy = windy;
+                }
+                else if(currentWindy > 1f)
+                {
+                    currentWindy = 1f;
+                }
+                else
+                {
+                    Debug.Log("You shoud not see this, contact programmer for fix");
+                }
             }
-            else if (Input.GetKey(KeyCode.LeftShift))
+            else if(windy < 1)
             {
-                m_Character.Move(h * 2, crouch, m_Jump);
+                Debug.Log("windy should not be less than 1");
             }
+            m_Character.Move(h * currentWindy, crouch, m_Jump);
             m_Jump = false;
         }
     }

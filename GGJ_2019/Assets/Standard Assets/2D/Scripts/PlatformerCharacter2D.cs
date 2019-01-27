@@ -5,6 +5,7 @@ namespace UnityStandardAssets._2D
 {
     public class PlatformerCharacter2D : MonoBehaviour
     {
+        public bool sprint; //Edit by KingdomCross
         [SerializeField] private float m_MaxSpeed = 10f;                    // The fastest the player can travel in the x axis.
         [SerializeField] private float m_JumpForce = 400f;                  // Amount of force added when the player jumps.
         //[Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;  // Amount of maxSpeed applied to crouching movement. 1 = 100%
@@ -47,6 +48,11 @@ namespace UnityStandardAssets._2D
 
             // Set the vertical animation
             m_Anim.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
+
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                sprint = !sprint;
+            }
         }
 
 
@@ -64,6 +70,7 @@ namespace UnityStandardAssets._2D
 
             // Set whether or not the character is crouching in the animator
             m_Anim.SetBool("Crouch", crouch);
+            m_Anim.SetBool("Sprint", sprint);
 
             //only control the player if grounded or airControl is turned on
             if (m_Grounded || m_AirControl)

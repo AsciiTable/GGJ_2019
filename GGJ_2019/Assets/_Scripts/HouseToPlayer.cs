@@ -32,7 +32,7 @@ public class HouseToPlayer : MonoBehaviour
             {
                 opacityTime -= Time.deltaTime * fadeSpeed;
             }
-            spriteRenderer.color = new Color(1f, 1f, 1f, opacityTime);
+            spriteRenderer.color = new Color(1f, 1f, 1f, opacityTime);  
         }
         else if (distance >= playerByHouse)
         {

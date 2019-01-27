@@ -18,6 +18,10 @@ public class sitSpot : MonoBehaviour
     private float sitTimer;
     private bool active = true;
 
+    private bool played = false;
+
+    public AudioSource bgm;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +52,12 @@ public class sitSpot : MonoBehaviour
         if (distance <= closeness && playerInput.crouch)
         {
             sitTimer += Time.deltaTime;
+            if (!played)
+            {
+                played = true;
+                Audio.PlaySound("fire_crackle");
+                bgm.enabled = true;
+            }
         }
         else
         {

@@ -68,7 +68,7 @@ public class WorldStatus : MonoBehaviour
             }
             else if (collection == 4)
             {
-                Audio.PlaySound("bitsOfColor");
+                Audio.PlaySound("bitsOfSound");
             }
             else if (collection == 5)
             {

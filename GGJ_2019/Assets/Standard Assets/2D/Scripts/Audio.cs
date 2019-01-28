@@ -10,7 +10,7 @@ public class Audio : MonoBehaviour
     public static AudioClip DoorOpenSFX;
     public static AudioClip FireCrackleSFX;
     public static AudioClip FootstepSFX;
-    public static AudioClip GradfatherClockSFX;
+    public static AudioClip GrandfatherClockSFX;
     static AudioSource MusicSource;
 	
 
@@ -22,7 +22,7 @@ public class Audio : MonoBehaviour
         DoorOpenSFX = Resources.Load<AudioClip>("door_open");
         FireCrackleSFX = Resources.Load<AudioClip>("fire_crackle");
         FootstepSFX = Resources.Load<AudioClip>("footstep");
-        GradfatherClockSFX = Resources.Load<AudioClip>("grandfather_clock");
+        GrandfatherClockSFX = Resources.Load<AudioClip>("grandfather_clock");
         MusicSource = GetComponent<AudioSource>();
     }
 	
@@ -56,7 +56,7 @@ public class Audio : MonoBehaviour
                 break;
             
             case "grandfather_clock":
-                MusicSource.PlayOneShot(GradfatherClockSFX);
+                MusicSource.PlayOneShot(GrandfatherClockSFX);
                 break;
 			
             default:

@@ -18,7 +18,11 @@ public class sitSpot : MonoBehaviour
     private float sitTimer;
     private bool active = true;
 
-    private bool played = false;
+    private bool playedFire = false;
+    private bool playedFireBGM = false;
+    
+    private bool playedNight = false;
+
 
     public AudioSource bgm;
 
@@ -52,6 +56,21 @@ public class sitSpot : MonoBehaviour
 
         if (distance <= closeness && playerInput.crouch)
         {
+            if(type == "Campfire" && !playedFire)
+            {
+                playedFire = true;
+                Audio.PlaySound("fire_crackle");
+            }
+
+            if (type == "NightSky")
+            {
+                if (!playedNight)
+                {
+                    playedNight = true;
+                    bgm.enabled = true;
+                }
+            }
+
             sitTimer += Time.deltaTime;
         }
         else
@@ -66,6 +85,7 @@ public class sitSpot : MonoBehaviour
         {
             if(type == "NightSky")
             {
+
                 spriteRenderer.enabled = true;
                 active = false;
                 worldStatus.stars = true;
@@ -75,6 +95,11 @@ public class sitSpot : MonoBehaviour
             //Sit Next to Campfire
             if (type == "Campfire")
             {
+                if (!playedFireBGM)
+                {
+                    playedFireBGM = true;
+                    bgm.enabled = true;
+                }
                 active = false;
                 worldStatus.ForestBackground = true;
                 worldStatus.livingRoom++;

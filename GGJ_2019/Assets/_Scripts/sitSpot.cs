@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public class sitSpot : MonoBehaviour
 {
@@ -75,10 +77,13 @@ public class sitSpot : MonoBehaviour
                 }
             }
 
-            if (type == "Clock" && !playedClock)
+            if (type == "Clock")
             {
-                Audio.PlaySound("grandfather_clock");
-                playedClock = true;
+                if (!playedClock)
+                {
+                    Audio.PlaySound("grandfather_clock");
+                    playedClock = true;
+                }
             }
 
             sitTimer += Time.deltaTime;

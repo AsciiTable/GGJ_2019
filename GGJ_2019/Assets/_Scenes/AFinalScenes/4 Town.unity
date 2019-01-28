@@ -2212,6 +2212,7 @@ GameObject:
   - component: {fileID: 782075272}
   - component: {fileID: 782075273}
   - component: {fileID: 782075274}
+  - component: {fileID: 782075275}
   m_Layer: 0
   m_Name: granny_house_exterior_gray
   m_TagString: Untagged
@@ -2296,6 +2297,25 @@ MonoBehaviour:
   player: {fileID: 1192594202}
   playerByHouse: 15
   fadeSpeed: 2
+--- !u!95 &782075275
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782075271}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e4854bcf24a94c4fbd2b8e43568b66f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &790681852
 GameObject:
   m_ObjectHideFlags: 0
@@ -5465,6 +5485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1473919793}
   - component: {fileID: 1473919792}
+  - component: {fileID: 1473919794}
   m_Layer: 0
   m_Name: granny_house
   m_TagString: Untagged
@@ -5534,6 +5555,25 @@ Transform:
   m_Father: {fileID: 66837931}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1473919794
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473919791}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 45821aa6444d4784287afbead61d0c04, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1483517622
 GameObject:
   m_ObjectHideFlags: 0

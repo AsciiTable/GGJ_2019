@@ -23,6 +23,10 @@ public class sitSpot : MonoBehaviour
     
     private bool playedNight = false;
 
+    private bool playedClock = false;
+    
+    private bool playedClockBGM = false;
+
 
     public AudioSource bgm;
 
@@ -71,6 +75,12 @@ public class sitSpot : MonoBehaviour
                 }
             }
 
+            if (type == "Clock" && !playedClock)
+            {
+                Audio.PlaySound("grandfather_clock");
+                playedClock = true;
+            }
+
             sitTimer += Time.deltaTime;
         }
         else
@@ -104,6 +114,15 @@ public class sitSpot : MonoBehaviour
                 worldStatus.ForestBackground = true;
                 worldStatus.livingRoom++;
                 worldStatus.collection++;
+            }
+
+            if (type == "Clock")
+            {
+                if (!playedClockBGM)
+                {
+                    playedClockBGM = true;
+                    bgm.enabled = true;
+                }
             }
         }
 

@@ -156,8 +156,8 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -29, y: -5}
-      - {x: -29, y: 6}
-      - {x: 28, y: 6}
+      - {x: -29, y: 5.5}
+      - {x: 28, y: 5.5}
       - {x: 28, y: -5}
 --- !u!212 &353319639
 SpriteRenderer:

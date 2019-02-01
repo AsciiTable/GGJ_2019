@@ -17,10 +17,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/AFinalScenes/3 House.unity
     guid: 14148c291ff325a41ace0e9033290abc
-  - enabled: 1
-    path: Assets/_Scenes/AFinalScenes/4 Town.unity
-    guid: e7a532aefdbc67240b756875949ad3a7
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/_Scenes/AFinalScenes/5 Cliff.unity
     guid: f06bdad12550ed34894afc84f190bebf
+  - enabled: 1
+    path: Assets/_Scenes/TestScene/BeforeEnding.unity
+    guid: 9ab55ae571343794abfbe8e4b178ec77
+  - enabled: 1
+    path: Assets/_Scenes/TestScene/Ending.unity
+    guid: db792f94b73fd6f4ca84b6a27bc270f4
   m_configObjects: {}

@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using Debug = UnityEngine.Debug;
 
 public class sitSpot : MonoBehaviour
 {
@@ -76,10 +77,13 @@ public class sitSpot : MonoBehaviour
                 }
             }
 
-            if (type == "Clock" && !playedClock)
+            if (type == "Clock")
             {
-                Audio.PlaySound("grandfather_clock");
-                playedClock = true;
+                if (!playedClock)
+                {
+                    Audio.PlaySound("grandfather_clock");
+                    playedClock = true;
+                }
             }
 
             sitTimer += Time.deltaTime;
@@ -131,10 +135,7 @@ public class sitSpot : MonoBehaviour
         {
             worldStatus.starGaze = true;
         }
-        //When player sit near ending object, player will transition to next scene which should be the ending
-        if (type == "Ending" && playerInput.crouch)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+        
+
     }
 }

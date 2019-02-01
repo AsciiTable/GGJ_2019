@@ -17,7 +17,7 @@ public class GrannyColor : MonoBehaviour
         worldStatus = GameObject.FindGameObjectWithTag("ScriptHolder").GetComponent<WorldStatus>();
         animator = GetComponent<Animator>();
 
-        if(worldStatus.CaveBackground == true)
+        if(worldStatus.GrandfatherClock == true)
         {
             activated = true;
             animator.SetTrigger("Done");

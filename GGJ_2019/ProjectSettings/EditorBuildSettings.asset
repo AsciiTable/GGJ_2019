@@ -19,7 +19,7 @@ EditorBuildSettings:
     guid: 14148c291ff325a41ace0e9033290abc
   - enabled: 1
     path: Assets/_Scenes/AFinalScenes/4 Town.unity
-    guid: 977b290f48a5cd246bb2e111bfacc1a2
+    guid: e7a532aefdbc67240b756875949ad3a7
   - enabled: 1
     path: Assets/_Scenes/AFinalScenes/5 Cliff.unity
     guid: f06bdad12550ed34894afc84f190bebf

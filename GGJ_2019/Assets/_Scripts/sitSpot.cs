@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
+using UnityEngine.SceneManagement;
 
 public class sitSpot : MonoBehaviour
 {
@@ -135,7 +136,9 @@ public class sitSpot : MonoBehaviour
         {
             worldStatus.starGaze = true;
         }
-        
-
+        if (type == "Ending" && playerInput.crouch)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }

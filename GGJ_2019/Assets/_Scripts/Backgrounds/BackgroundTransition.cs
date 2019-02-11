@@ -10,14 +10,17 @@ public class BackgroundTransition : MonoBehaviour
     public Image image2;
     public Image image3;
     public float fadeTime = 1;
-    private float transparent1 = 1;
-    private float transparent2 = 1;
-    private float transparent3 = 1;
+    private float transparent1 = 0;
+    private float transparent2 = 0;
+    private float transparent3 = 0;
     private int backgroundTotal;
     private int maxTotal;
     // Start is called before the first frame update
     void Start()
     {
+        transparent1 = 0;
+        transparent2 = 0;
+        transparent3 = 0;
         //First image
         if(image1 != null)
         {
@@ -56,6 +59,7 @@ public class BackgroundTransition : MonoBehaviour
             }
         }
         maxTotal = backgroundTotal;
+        backgroundTotal = 1;
     }
 
     // Update is called once per frame

@@ -53,6 +53,7 @@ public class sitSpot : MonoBehaviour
             spriteRenderer.enabled = true;
         }
 
+
     }
 
     // Update is called once per frame

@@ -42,7 +42,6 @@ public class sitSpot : MonoBehaviour
         if(type == "Campfire" && worldStatus.ForestBackground)
         {
             active = false;
-            Destroy(this.gameObject);
         }
         if(type == "NightSky" && worldStatus.stars == true)
         {
